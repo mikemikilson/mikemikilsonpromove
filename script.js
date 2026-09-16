@@ -1,0 +1,1 @@
+function toggleMenu(){document.querySelector('nav').classList.toggle('nav-open')}document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('nav-open')));
