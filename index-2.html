@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Mike Mikilson Promove — divulgação de música, artistas, videoclipes, eventos, entrevistas, conteúdos e distribuição musical.">
+<meta name="theme-color" content="#6d28d9">
+<title>Mike Mikilson Promove | Música • Cultura • Entretenimento</title>
+<style>
+:root{--p:#6d28d9;--pk:#ec4899;--o:#f97316;--y:#facc15;--b:#2563eb;--ink:#171327;--mut:#665f76;--bg:#fffafd;--line:#eee7f4}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 5% 0%,#fce7f3,transparent 27%),radial-gradient(circle at 100% 10%,#dbeafe,transparent 25%),var(--bg);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#fffdfdf2;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.mark{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--p),var(--pk),var(--o));font-size:13px}.brand small{font-size:14px}
+nav{display:flex;gap:4px}nav a{padding:10px 12px;border-radius:12px;font-weight:750;font-size:14px}nav a:hover{background:#f2eafe;color:var(--p)}.menu{display:none;border:0;background:#f2eafe;color:var(--p);border-radius:12px;width:44px;height:44px;font-size:21px}
+.hero{padding:78px 0}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.eyebrow,.kicker{color:var(--p);font-weight:900;letter-spacing:1px;font-size:12px}.eyebrow{display:inline-block;background:#f2eafe;border-radius:999px;padding:8px 13px}
+h1{font-size:clamp(48px,7vw,82px);line-height:.9;letter-spacing:-3px;margin:20px 0;background:linear-gradient(90deg,var(--p),var(--pk),var(--o));-webkit-background-clip:text;background-clip:text;color:transparent}.hero h2{font-size:28px;margin:0 0 10px}.hero p{color:var(--mut);font-size:18px;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:14px;font-weight:850;border:1px solid var(--line);transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{color:#fff;border:0;background:linear-gradient(135deg,var(--p),var(--pk));box-shadow:0 12px 28px #6d28d933}.secondary{background:#fff}
+.hero-card,.card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 14px 40px #3e1c6414;overflow:hidden}.hero-card{padding:18px;transform:rotate(1deg)}.hero-card img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px}
+section{padding:70px 0}.head{margin-bottom:26px}.head h2{font-size:clamp(30px,5vw,44px);line-height:1.05;margin:5px 0}.head p{color:var(--mut);margin:0}
+.music-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.music{display:grid;grid-template-columns:175px 1fr}.cover{width:100%;height:100%;object-fit:cover}.info{padding:23px}.info h3{font-size:25px;margin:5px 0}.info p{color:var(--mut)}
+.artist{display:grid;grid-template-columns:280px 1fr;align-items:center}.artist img{width:100%;height:340px;object-fit:cover}.artist-info{padding:30px}.artist-info h3{font-size:38px;margin:5px 0}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.chip{background:#f2eafe;color:var(--p);padding:7px 10px;border-radius:99px;font-size:13px;font-weight:800}
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.video{padding:10px}.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:16px}.video strong{display:block;padding:10px 4px 3px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{padding:22px;min-height:155px}.service b{font-size:27px}.service h3{margin:10px 0 5px}.service p{margin:0;color:var(--mut);font-size:14px}
+.contact{border-radius:30px;padding:42px;background:linear-gradient(135deg,#241047,var(--p),var(--pk));color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact h2{font-size:42px;line-height:1.05;margin:5px 0 12px}.contact p{color:#eee6ff}.contact a.box,.contact .box{display:block;background:#ffffff1c;border:1px solid #ffffff30;padding:14px;border-radius:14px;margin:9px 0;font-weight:750}.social{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.social a{background:#fff;color:var(--p);padding:8px 11px;border-radius:10px;font-weight:850;font-size:13px}
+footer{text-align:center;padding:30px 0 85px;color:var(--mut);font-size:13px}.wa{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:27px;box-shadow:0 15px 35px #25d36655}
+@media(max-width:900px){.hero-grid,.contact-grid{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.videos{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.menu{display:block}nav{display:none;position:absolute;top:72px;left:4%;right:4%;background:#fff;border:1px solid var(--line);border-radius:17px;padding:7px;box-shadow:0 15px 40px #3e1c6420;flex-direction:column}nav.open{display:flex}.brand small{font-size:12px}.music-grid,.videos,.services{grid-template-columns:1fr}.music,.artist{grid-template-columns:1fr}.artist img{height:auto;aspect-ratio:4/5}.hero{padding:55px 0}.hero h2{font-size:23px}.contact{padding:30px 22px}.contact h2{font-size:34px}section{padding:55px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="mark">MM</span><small>MIKE MIKILSON PROMOVE</small></a>
+<button class="menu" onclick="menu()">☰</button>
+<nav id="nav"><a href="#inicio">Início</a><a href="#musicas">Músicas</a><a href="#artista">Artista</a><a href="#videos">Vídeos</a><a href="#servicos">Serviços</a><a href="#contactos">Contactos</a></nav>
+</div></header>
+
+<main>
+<section id="inicio" class="hero"><div class="wrap hero-grid"><div>
+<span class="eyebrow">🎵 MÚSICA • CULTURA • ENTRETENIMENTO</span>
+<h1>Mike<br>Mikilson<br>Promove</h1>
+<h2>A tua música merece ser ouvida.</h2>
+<p>Uma plataforma de divulgação musical dedicada a dar visibilidade a artistas, músicas e projetos através de promoção e conteúdos digitais.</p>
+<div class="actions"><a class="btn primary" href="https://wa.me/244958940058" target="_blank" rel="noopener">📲 QUERO PROMOVER A MINHA MÚSICA</a><a class="btn secondary" href="#musicas">🎧 Ver músicas</a></div>
+</div><div class="hero-card"><img src="1000023620.jpg" alt="Mike Mikilson"><p style="margin:12px 4px 0;font-weight:850">Mike Mikilson • Vai na Fé</p></div></div></section>
+
+<section id="musicas"><div class="wrap"><div class="head"><div class="kicker">LANÇAMENTOS</div><h2>Músicas</h2><p>Conheça os lançamentos de Mike Mikilson.</p></div>
+<div class="music-grid">
+<article class="card music"><img class="cover" src="Vai_na_fe.png" alt="Capa de Vai na Fé — Mike Mikilson"><div class="info"><div class="kicker">MIKE MIKILSON</div><h3>Vai na Fé</h3><p>Lançamento disponível em plataformas digitais.</p><a class="btn primary" href="https://app.aimusicdistribution.com/share/MTAwMDAwODcxNzI0" target="_blank" rel="noopener">▶ Ouvir agora</a></div></article>
+<article class="card music"><img class="cover" src="Catarina_estilizado.png" alt="Capa de Catarina — Mike Mikilson"><div class="info"><div class="kicker">MIKE MIKILSON</div><h3>Catarina</h3><p>Lançamento disponível em plataformas digitais.</p><a class="btn primary" href="https://app.aimusicdistribution.com/share/MTAwMDAwODcxNzUx" target="_blank" rel="noopener">▶ Ouvir agora</a></div></article>
+</div></div></section>
+
+<section id="artista"><div class="wrap"><div class="head"><div class="kicker">ARTISTA EM DESTAQUE</div><h2>Mike Mikilson</h2></div>
+<div class="card artist"><img src="1000023620.jpg" alt="Mike Mikilson"><div class="artist-info"><div class="kicker">ARTISTA</div><h3>Mike Mikilson</h3><p>Projeto em destaque: <strong>Vai na Fé</strong>.</p><div class="chips"><span class="chip">Música</span><span class="chip">Artista</span><span class="chip">Divulgação</span></div><a class="btn primary" href="#musicas">Ver lançamento</a></div></div></div></section>
+
+<section id="videos"><div class="wrap"><div class="head"><div class="kicker">CONTEÚDO AUDIOVISUAL</div><h2>Vídeos</h2><p>Vídeos publicados no canal do YouTube de Mike Mikilson.</p></div>
+<div class="videos">
+<article class="card video"><iframe src="https://www.youtube.com/embed/6UjkcwCHCgs" title="Vídeo de Mike Mikilson" loading="lazy" allowfullscreen></iframe><strong>Vídeo 1</strong></article>
+<article class="card video"><iframe src="https://www.youtube.com/embed/vl280Jo24A0" title="Vídeo de Mike Mikilson" loading="lazy" allowfullscreen></iframe><strong>Vídeo 2</strong></article>
+<article class="card video"><iframe src="https://www.youtube.com/embed/ro5pWk6alSk" title="Vídeo de Mike Mikilson" loading="lazy" allowfullscreen></iframe><strong>Vídeo 3</strong></article>
+</div><p style="color:var(--mut);font-size:13px;margin-top:12px"><a href="https://www.youtube.com/@mikemikilson" target="_blank" rel="noopener">▶ Abrir canal YouTube</a></p></div></section>
+
+<section id="servicos"><div class="wrap"><div class="head"><div class="kicker">O QUE FAZEMOS</div><h2>Serviços</h2><p>Divulgação e apoio a projetos de música e entretenimento.</p></div>
+<div class="services">
+<div class="card service"><b>🎵</b><h3>Promoção musical</h3><p>Divulgação de músicas e projetos musicais.</p></div>
+<div class="card service"><b>🎬</b><h3>Promoção de videoclipes</h3><p>Divulgação de conteúdos audiovisuais.</p></div>
+<div class="card service"><b>🎤</b><h3>Promoção de artistas</h3><p>Visibilidade para artistas e seus projetos.</p></div>
+<div class="card service"><b>🎟️</b><h3>Eventos e shows</h3><p>Promoção de eventos e apresentações.</p></div>
+<div class="card service"><b>📱</b><h3>Publicidade nas redes</h3><p>Divulgação através de redes sociais.</p></div>
+<div class="card service"><b>🎙️</b><h3>Entrevistas</h3><p>Entrevistas com artistas.</p></div>
+<div class="card service"><b>📰</b><h3>Notícias e conteúdos</h3><p>Conteúdos de música e entretenimento.</p></div>
+<div class="card service"><b>🌐</b><h3>Distribuição digital</h3><p>Auxílio no processo de distribuição de projetos musicais para plataformas digitais.</p></div>
+</div></div></section>
+
+<section id="contactos"><div class="wrap"><div class="contact"><div class="contact-grid"><div>
+<div class="kicker" style="color:#facc15">VAMOS TRABALHAR</div><h2>Queres promover a tua música?</h2><p>Entra em contacto com Mike Mikilson Promove para enviar o teu projeto e iniciar a divulgação.</p>
+<a class="btn" style="background:#25d366;color:#fff;border:0" href="https://wa.me/244958940058" target="_blank" rel="noopener">📲 Falar no WhatsApp</a>
+</div><div>
+<a class="box" href="https://wa.me/244958940058" target="_blank" rel="noopener">WhatsApp: +244 958 940 058</a>
+<a class="box" href="mailto:mikemikilson04@gmail.com">E-mail: mikemikilson04@gmail.com</a><div class="box">📍 Luanda, Angola</div>
+<div class="social"><a href="https://www.facebook.com/mikemikilsoncantor" target="_blank" rel="noopener">Facebook</a><a href="https://instagram.com/mike_mikilson" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@mikemikilson" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/@mikemikilson" target="_blank" rel="noopener">YouTube</a></div>
+</div></div></div></div></section>
+</main>
+<footer>© 2026 Mike Mikilson Promove • Luanda, Angola</footer>
+<a class="wa" href="https://wa.me/244958940058" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+<script>function menu(){document.getElementById('nav').classList.toggle('open')}</script>
+</body></html>
